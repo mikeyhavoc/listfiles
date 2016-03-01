@@ -5,8 +5,15 @@
 #              folder and creates and lists them in a text document.
 # updated:
 # version: 0.5
+import = os,sys
 
-#TODO folder os walk folder, subdirectory, filenames
+#Folder os walk folder, subdirectory, filenames
+def search_folder(folder):
+    '''walks folder path from top node(folder) too nodes(files)'''
+    for folder, subdirectory, files in os.walk(folder):
+
+        folder = os.path.abspath(folder) # make sure it is the absolute path.
+        
 
 #TODO create text file
 
