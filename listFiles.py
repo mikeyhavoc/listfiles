@@ -5,7 +5,7 @@
 #              folder and creates and lists them in a text document.
 # updated:
 # version: 0.5
-import = os,sys
+import os,sys
 
 #Folder os walk folder, subdirectory, filenames
 def search_folder(folder):
@@ -13,7 +13,10 @@ def search_folder(folder):
     for folder, subdirectory, files in os.walk(folder):
 
         folder = os.path.abspath(folder) # make sure it is the absolute path.
-        
+
+        list_receiver = open('output_file','w')  # text file to write output list too.
+
+
 
 #TODO create text file
 
