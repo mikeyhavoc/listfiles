@@ -19,19 +19,13 @@ def search_folder(folder):
 
         #base_name = os.path.getcwd()
 
-
-        file_name = filenames
+        #file_name = filenames
 
         for file_name in filenames:
-            #if subdirectory.startswith('.git'):
-            #    continue
             print(file_name)
 
 search_folder('C:\\Users\\mjwil\\documents\\github\\portfolio\\python\\listfiles')
 
-
-
-#TODO create text file
 
 #TODO send filenames to text file.
 
