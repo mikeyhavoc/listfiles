@@ -10,11 +10,8 @@ import os,sys
 #Folder os walk folder, subdirectory, filenames
 def search_folder(folder):
     '''list directory of incoming path'''
-
     for filenames in os.listdir(folder):
-
-        for file_name in filenames:
-            print(file_name)
+     print(filenames)
 
 search_folder('C:\\Users\\mjwil\\documents\\github\\portfolio\\python\\listfiles')
 
