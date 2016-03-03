@@ -16,12 +16,6 @@ def search_folder(folder):
 
         #folder = os.path.abspath(folder) # make sure it is the absolute path.
 
-        list_receiver = open('output_file' + str(counter) + '.txt','w')  # text file to write output list too.  - w - creates text file if none exists.
-
-        #base_name = os.path.getcwd()
-
-        #file_name = filenames
-
         for file_name in filenames:
             print(file_name)
 
@@ -29,6 +23,7 @@ search_folder('C:\\Users\\mjwil\\documents\\github\\portfolio\\python\\listfiles
 
 
 #TODO send filenames to text file.
+#list_receiver = open('output_file' + str(counter) + '.txt','w')  # text file to write output list too.  - w - creates text file if none exists.
 
 #TODO give file path for folder to os.walk (version 2)
 
