@@ -9,12 +9,9 @@ import os,sys
 
 #Folder os walk folder, subdirectory, filenames
 def search_folder(folder):
-    '''walks folder path from top node(folder) too nodes(files)'''
+    '''list directory of incoming path'''
 
     for filenames in os.listdir(folder):
-        counter = 1 # increase output_file by 1
-
-        #folder = os.path.abspath(folder) # make sure it is the absolute path.
 
         for file_name in filenames:
             print(file_name)
