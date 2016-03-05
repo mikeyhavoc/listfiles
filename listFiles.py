@@ -12,15 +12,26 @@ def search_folder(folder):
     '''list directory of incoming path'''
     for filenames in os.listdir(folder):
 
-     print(filenames)
+     return filenames
 
-#TODO send filenames to text file.
-#list_receiver = open('output_file' + str(counter) + '.txt','w')  # text file to write output list too.  - w - creates text file if none exists.
+#Send filenames to text file.
+def file_to_text(file_names):
+    text_file_name = input('please name text file ')
+    print('creating text file...')
+    # text file to write output list too.  - w - creates text file
+    list_receiver = open(text_file_name  + '.txt','w')
+    file.write(list_receiver, file_names)
+    list_receiver.close()
+
+
+
+
 
 
 
 path = os.getcwd()
-search_folder(path)
+file_names = search_folder(path)
+file_to_text(file_names)
 #TODO give file path for folder to os.walk (version 2)
 
 #TODO add yyyy-mm-dd-files.txt (version 3)
