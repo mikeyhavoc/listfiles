@@ -10,9 +10,21 @@ import os,sys
 #Folder os walk folder, subdirectory, filenames
 def search_folder(folder):
     '''list directory of incoming path'''
-    for filenames in os.listdir(folder):
+    '''
+    # Open a file
+    path = "/var/www/html/"
+    dirs = os.listdir( path )
 
-     return filenames
+    # This would print all the files and directories
+    for file in dirs:
+       print file
+    '''
+    path = folder
+    dirs = os.listdir( path )
+
+    # print all files and directories
+    for file in dirs:
+        print(file)
 
 #Send filenames to text file.
 def file_to_text(file_names):
@@ -20,7 +32,7 @@ def file_to_text(file_names):
     print('creating text file...')
     # text file to write output list too.  - w - creates text file
     list_receiver = open(text_file_name  + '.txt','w')
-    list_receiver.write(file_names)
+    list_receiver.write(text_file_name)
     list_receiver.close()
 
 
