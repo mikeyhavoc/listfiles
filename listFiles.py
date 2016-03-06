@@ -4,7 +4,7 @@
 # description: looks through a folder and lists all files contained in said
 #              folder and creates and lists them in a text document.
 # updated: 3/6/16
-# version: 2.0
+# version: 2.5
 import os,sys,datetime
 
 #Folder os walk folder, subdirectory, filenames
