@@ -32,6 +32,10 @@ def list_files_in_text(folder):
 
 #File path for folder to listdir version 2.5
 def file_path():
+    '''directory left empty takes path listfiles.py is
+       currently in, or can enter desired path for
+       directory
+    '''
     directory_name = input('please give directory path ')
     if directory_name == '' or directory_name == None:
         return os.getcwd()
