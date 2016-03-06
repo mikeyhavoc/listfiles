@@ -5,7 +5,7 @@
 #              folder and creates and lists them in a text document.
 # updated: 3/6/16
 # version: 2.0
-import os,sys
+import os,sys,datetime
 
 #Folder os walk folder, subdirectory, filenames
 def list_files_in_text(folder):
@@ -34,7 +34,7 @@ def list_files_in_text(folder):
 path = os.getcwd()
 list_files_in_text(path)
 
-#TODO give file path for folder to os.walk (version 2)
+#TODO give file path for folder to listdir (version 2)
 
 #TODO add yyyy-mm-dd-files.txt (version 3)
 
