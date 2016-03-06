@@ -10,15 +10,7 @@ import os,sys
 #Folder os walk folder, subdirectory, filenames
 def search_folder(folder):
     '''list directory of incoming path'''
-    '''
-    # Open a file
-    path = "/var/www/html/"
-    dirs = os.listdir( path )
 
-    # This would print all the files and directories
-    for file in dirs:
-       print file
-    '''
     path = folder
     dirs = os.listdir( path )
 
