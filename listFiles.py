@@ -22,24 +22,21 @@ def search_folder(folder):
     path = folder
     dirs = os.listdir( path )
 
-    # print all files and directories
-    for file in dirs:
-        print(file)
-
-#Send filenames to text file.
-def file_to_text(file_names):
     text_file_name = input('please name text file ')
     print('creating text file...')
     # text file to write output list too.  - w - creates text file
     list_receiver = open(text_file_name  + '.txt','w')
-    list_receiver.write(file_names)
-    list_receiver.close()
 
+    # print all files and directories
+    for file_names in dirs:
+         files = list_receiver.write(file_names) # write files to txt file.
+
+    list_receiver.close() # close txt file.
 
 
 path = os.getcwd()
-file_names = search_folder(path)
-file_to_text(file_names)
+search_folder(path)
+
 #TODO give file path for folder to os.walk (version 2)
 
 #TODO add yyyy-mm-dd-files.txt (version 3)
