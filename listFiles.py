@@ -8,8 +8,12 @@
 import os,sys
 
 #Folder os walk folder, subdirectory, filenames
-def search_folder(folder):
-    '''list directory of incoming path'''
+def list_files_in_text(folder):
+    '''list directory of incoming path
+       opens list_receiver name text
+       file being created. for file in
+       dirs print files. close list_receiver
+    '''
 
     path = folder
     dirs = os.listdir( path )
@@ -28,7 +32,7 @@ def search_folder(folder):
 
 
 path = os.getcwd()
-search_folder(path)
+list_files_in_text(path)
 
 #TODO give file path for folder to os.walk (version 2)
 
