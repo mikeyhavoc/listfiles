@@ -32,7 +32,7 @@ def file_to_text(file_names):
     print('creating text file...')
     # text file to write output list too.  - w - creates text file
     list_receiver = open(text_file_name  + '.txt','w')
-    list_receiver.write(text_file_name)
+    list_receiver.write(file_names)
     list_receiver.close()
 
 
