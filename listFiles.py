@@ -30,11 +30,18 @@ def list_files_in_text(folder):
 
     list_receiver.close() # close txt file.
 
+#File path for folder to listdir version 2.5
+def file_path():
+    directory_name = input('please give directory path ')
+    if directory_name == '' or directory_name == None:
+        return os.getcwd()
+    elif directory_name != None:
+        return directory_name
 
 path = os.getcwd()
-list_files_in_text(path)
+directory_name = file_path()
+list_files_in_text(directory_name)
 
-#TODO give file path for folder to listdir (version 2)
 
 #TODO add yyyy-mm-dd-files.txt (version 3)
 
