@@ -30,6 +30,7 @@ def search_folder(folder):
     # print all files and directories
     for file_names in dirs:
          files = list_receiver.write(file_names) # write files to txt file.
+         line_space = list_receiver.write('\n')
 
     list_receiver.close() # close txt file.
 
