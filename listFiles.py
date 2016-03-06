@@ -3,8 +3,8 @@
 # date: 2/29/16
 # description: looks through a folder and lists all files contained in said
 #              folder and creates and lists them in a text document.
-# updated:
-# version: 1.0
+# updated: 3/6/16
+# version: 2.0
 import os,sys
 
 #Folder os walk folder, subdirectory, filenames
