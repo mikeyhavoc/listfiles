@@ -16,7 +16,7 @@ def list_files_in_text(folder):
     '''
 
     path = folder
-    dirs = os.listdir( path )
+    files = os.listdir( path )
 
     text_file_name = input('please name text file ')
     print('creating text file...')
@@ -24,9 +24,12 @@ def list_files_in_text(folder):
     list_receiver = open(text_file_name  + '.txt','w')
 
     # print all files and directories
-    for file_names in dirs:
-         files = list_receiver.write(file_names) # write files to txt file.
-         line_space = list_receiver.write('\n')
+    for folder, subdirectory,files in os.walk(folder):
+        if files in folder:
+            continue
+        for file_names in files:
+             files = list_receiver.write(str(file_names)) # write files to txt file.
+             line_space = list_receiver.write('\n')
 
     list_receiver.close() # close txt file.
 
