@@ -25,11 +25,11 @@ def list_files_in_text(folder):
 
     # print all files and directories
     for folder, subdirectory,files in os.walk(folder):
-        if files in folder:
-            continue
         for file_names in files:
-             files = list_receiver.write(str(file_names)) # write files to txt file.
-             line_space = list_receiver.write('\n')
+            if files in subdirectory:
+                continue
+            files = list_receiver.write(file_names) # write files to txt file.
+            line_space = list_receiver.write('\n')
 
     list_receiver.close() # close txt file.
 
