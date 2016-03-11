@@ -24,7 +24,7 @@ def list_files_in_text(folder):
     list_receiver = open(text_file_name  + '.txt','w')
 
     for file_names in files:
-        if file_names.startswith('.'):
+        if file_names.startswith('.'):          # all directories excluded
             continue
         files = list_receiver.write(file_names)
         line_space = list_receiver.write('\n')
