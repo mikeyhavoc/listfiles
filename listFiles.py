@@ -23,12 +23,11 @@ def list_files_in_text(folder):
     # text file to write output list too.  - w - creates text file
     list_receiver = open(text_file_name  + '.txt','w')
 
-    for folder, subdirectory, files in os.walk(folder):
-        if files in subdirectory:
+    for file_names in files:
+        if file_names.startswith('.'):
             continue
-        elif files not in subdirectory:
-            files = list_receiver.write(file_names) # write files to txt file.
-            line_space = list_receiver.write('\n')
+        files = list_receiver.write(file_names)
+        line_space = list_receiver.write('\n')
 
     list_receiver.close() # close txt file.
 
