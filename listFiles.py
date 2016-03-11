@@ -3,8 +3,8 @@
 # date: 2/29/16
 # description: looks through a folder and lists all files contained in said
 #              folder and creates and lists them in a text document.
-# updated: 3/6/16
-# version: 2.5
+# updated: 3/11/16
+# version: 3
 import os,sys,datetime
 
 #Folder os walk folder, subdirectory, filenames
@@ -14,7 +14,6 @@ def list_files_in_text(folder):
        file being created. for file in
        dirs print files. close list_receiver
     '''
-
     path = folder
     files = os.listdir( path )
 
@@ -48,6 +47,6 @@ directory_name = file_path()
 list_files_in_text(directory_name)
 
 
-#TODO add yyyy-mm-dd-files.txt (version 3)
+#Timestamp yyyy-mm-dd-files.txt (version 3.5)
 
 #TODO be able to alter filename - yyyy-mm-dd-filename.txt (version 4)
