@@ -29,7 +29,7 @@ def list_files_in_text(folder):
         line_space = list_receiver.write('\n')
 
     list_receiver.close() # close txt file.
-
+    return file_names
 #File path for folder to listdir version 2.5
 def file_path():
     '''directory left empty takes path listfiles.py is
@@ -42,20 +42,16 @@ def file_path():
     elif directory_name != None:
         return directory_name
 
+
+
 #path = os.getcwd()
-#directory_name = file_path()
-#list_files_in_text(directory_name)
+directory_name = file_path()
+list_files_in_text(directory_name)
 
 
-#Timestamp yyyy-mm-dd-files.txt (version 3.5)
-def time_stamp(text_file_name):
-    year = datetime.datetime.year().now
-    month = datetime.datetime.month().now
-    day = datetime.datetime.day().now
 
-    
 
-    #change_name = input('update name to yyyy-mm-dd-filename? ')
+
 
 
 
