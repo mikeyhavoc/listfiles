@@ -42,12 +42,26 @@ def file_path():
     elif directory_name != None:
         return directory_name
 
+#Timestamp yyyy-mm-dd-files.txt (version 3.5)
+def time_stamp(text_file_name):
+    year = datetime.datetime.now().year
+    month = datetime.datetime.now().month
+    day = datetime.datetime.now().day
+
+    date_file_name = str(year) + '-' + str(month) + '-' + str(day) + '_' +  str(text_file_name)
+
+    date_name = input('update name to yyyy-mm-dd-filename? ')
+    if date_name == 'yes' or date_name == 'y':
+        new_name = os.rename(date_file_name, text_file_name)
+        return new_name
+    elif date_name == 'no' or date_name == 'n':
+        return text_file_name
 
 
 #path = os.getcwd()
 directory_name = file_path()
-list_files_in_text(directory_name)
-
+name = list_files_in_text(directory_name)
+timestamp(name)
 
 
 
