@@ -3,8 +3,8 @@
 # date: 2/29/16
 # description: looks through a folder and lists all files contained in said
 #              folder and creates and lists them in a text document.
-# updated: 3/11/16
-# version: 3
+# updated: 3/13/16
+# version: 4
 import os,sys,datetime
 
 #Folder os walk folder, subdirectory, filenames
@@ -79,8 +79,3 @@ directory_name = file_path()
 given_dir = working_path( directory_name )
 name = list_files_in_text(directory_name)
 time_stamp(name)
-
-
-
-
-#TODO be able to alter filename - yyyy-mm-dd-filename.txt (version 4)
