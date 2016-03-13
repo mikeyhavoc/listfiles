@@ -44,6 +44,11 @@ def file_path():
 
 #Timestamp yyyy-mm-dd-files.txt (version 3.5)
 def time_stamp(text_file_name):
+    '''
+       optionally asks if you would like to os.rename
+       text_file_name to yyyy-mm-dd_filename.txt from
+       filename.txt
+    '''
     year = datetime.datetime.now().year
     month = datetime.datetime.now().month
     day = datetime.datetime.now().day
