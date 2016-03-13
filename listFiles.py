@@ -59,14 +59,23 @@ def time_stamp(text_file_name):
         return text_file_name
 
 def working_path( folder ):
+    '''
+       returns if yes current working directory
+       if no returns listdir to working_path
+    '''
     get_path = input('would you like to see the path? ')
     if get_path == 'yes' or get_path == 'y':
-        return 
+        print(os.getcwd())
+    elif get_path == 'no' or get_path == 'n':
+        return os.listdir()
 
 #path = os.getcwd()
 directory_name = file_path()
+given_dir = working_path( directory_name )
 name = list_files_in_text(directory_name)
 time_stamp(name)
+
+
 
 
 #TODO be able to alter filename - yyyy-mm-dd-filename.txt (version 4)
