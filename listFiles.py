@@ -48,24 +48,25 @@ def time_stamp(text_file_name):
     month = datetime.datetime.now().month
     day = datetime.datetime.now().day
 
-    date_file_name = str(year) + '-' + str(month) + '-' + str(day) + '_' +  str(text_file_name) + '.txt'
-    #text_name = text_file_name + '.txt'
+    date_file_name = str(year) + '-' + str(month) + '-' + str(day) + '_' +  str(text_file_name) + '.txt' # yyyy-mm-dd-filename
+
+    text_file = text_file_name + '.txt'  # extension added for os.rename.
+
     date_name = input('update name to yyyy-mm-dd-filename? ')
     if date_name == 'yes' or date_name == 'y':
-        return os.rename(text_file_name , date_file_name)
+        return os.rename(text_file , date_file_name)
     elif date_name == 'no' or date_name == 'n':
         return text_file_name
 
+def working_path( folder ):
+    get_path = input('would you like to see the path? ')
+    if get_path == 'yes' or get_path == 'y':
+        return 
 
 #path = os.getcwd()
 directory_name = file_path()
 name = list_files_in_text(directory_name)
 time_stamp(name)
-
-
-
-
-
 
 
 #TODO be able to alter filename - yyyy-mm-dd-filename.txt (version 4)
