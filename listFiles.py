@@ -36,7 +36,7 @@ def file_path():
        currently in, or can enter desired path for
        directory
     '''
-    directory_name = input('please give directory path ')
+    directory_name = input('please give directory path or use files ')
     if directory_name == '' or directory_name == None:
         return os.getcwd()
     elif directory_name != None:
